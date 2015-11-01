@@ -1,2 +1,2 @@
 # fibonacci
-Example of fibonacci sequence generatio approaches
+Example of fibonacci sequence generation approaches
