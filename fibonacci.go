@@ -30,7 +30,8 @@ var fibonacciTable = []int64{
 // compute the Nth Fibonacci number using big integer arithmentic.  Efficient algorithms
 // are used so the 10 millionth value requires about a second to create the result, which
 // has 2,089,877 digits when formatted in decimal. Time measured and algorithm breakpoint
-// determined on 2013 MacBook Pro test system (2.7 GHz Intel Core i7, MacBookPro10,1)
+// determined on 2013 MacBook Pro test system (2.7 GHz Intel Core i7, MacBookPro10,1). In
+// recent testing, this time is 0.38 seconds using Go 1.5.1 and slightly newer MacBook.
 func Fibonacci(n int) (f *big.Int) {
 	switch {
 	case n < 1:
