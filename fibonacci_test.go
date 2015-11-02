@@ -401,13 +401,14 @@ func breakpoint(low, high int) int {
 // BENCHMARKS
 //
 
-// BenchmarkFibonacci10			10000000	       224 ns/op
-// BenchmarkFibonacci100		  500000	      3755 ns/op
-// BenchmarkFibonacci1000		  300000	      5059 ns/op
-// BenchmarkFibonacci10000		   50000	     30014 ns/op
-// BenchmarkFibonacci100000	 	    3000	    444158 ns/op
-// BenchmarkFibonacci1000000	     100	  15224615 ns/op
-// BenchmarkFibonacci10000000	       2	 604239641 ns/op (2M digits, 0.6 seconds!)
+// Updated benchmark results for Go 1.5.1 and new MacPro with 2.8 GHz intel Core i7 CPU
+// BenchmarkFibonacci10-8      	20000000	       106 ns/op
+// BenchmarkFibonacci100-8     	 1000000	      2508 ns/op
+// BenchmarkFibonacci1000-8    	  500000	      2632 ns/op
+// BenchmarkFibonacci10000-8   	  100000	     13448 ns/op
+// BenchmarkFibonacci100000-8  	    5000	    260188 ns/op
+// BenchmarkFibonacci1000000-8 	     200	   9795848 ns/op
+// BenchmarkFibonacci10000000-8	       3	 383268720 ns/op (2M digits, 0.38 seconds!)
 
 // Measure the average time it takes to generate Fibonacci(n) for various n.
 func benchmarkFibonacci(b *testing.B, n int) {
